@@ -16,7 +16,7 @@ namespace INSS.Services
             ICalculadorInss calculadorInssInterface = new CalculadorInssModel();
             desconto = calculadorInssInterface.CalcularDesconto(pData, pSalario);
 
-            return Convert.ToDecimal(desconto.ToString("#.##"));
+            return Convert.ToDecimal(desconto.ToString("n2"));
         }
     }
 }

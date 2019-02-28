@@ -19,7 +19,7 @@ namespace INSS.Models
         {
             decimal retorno = 0M;
 
-            if (pSalario == 0)
+            if (pSalario == 0 || pTabelaCalculo.tabelaInss.Count == 0)
                 return retorno;
 
             foreach (var item in pTabelaCalculo.tabelaInss)
